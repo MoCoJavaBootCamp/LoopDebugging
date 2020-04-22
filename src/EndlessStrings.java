@@ -6,13 +6,14 @@ public class EndlessStrings {
 
         Scanner keyboard = new Scanner(System.in);
         String userInput = "";
+
         System.out.println("Enter something: ");
-        userInput = keyboard.next();
+        userInput = keyboard.nextLine();
 
         while (!userInput.equals("")) {
             System.out.println(userInput);
             System.out.println("Enter something: ");
-            userInput = keyboard.next();
+            userInput = keyboard.nextLine();
         }
     }
 }
